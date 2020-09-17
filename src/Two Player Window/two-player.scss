@@ -1,0 +1,176 @@
+.two-player-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  opacity: 0.65;
+
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    display: flex;
+    z-index: 1;
+    .header-arrow {
+      position: fixed;
+      top: 17px;
+      left: 34px;
+      width: 30px;
+      height: 27px;
+      opacity: 1;
+      cursor: pointer;
+      font-size: 32px;
+    }
+    .header-text {
+      position: fixed;
+      top: 20px;
+      left: 830px;
+      width: 261px;
+      height: 39px;
+      text-align: left;
+      font: normal normal 600 28px/42px Poppins;
+      letter-spacing: 0px;
+      color: #424242;
+      opacity: 1;
+    }
+  }
+  .container {
+    position: absolute;
+    top: 120px;
+    left: 580px;
+    width: 710px;
+    height: 836px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f7f7f7;
+    border-radius: 30px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 28px 0px;
+    .section-1 {
+      background: #dcf6e4 0% 0% no-repeat padding-box;
+      border: 1px solid #70707026;
+      .section-1-span {
+        border: 18px solid #37ac5d;
+      }
+    }
+    .section-2 {
+      background: #f6efd5 0% 0% no-repeat padding-box;
+      border: 1px solid #70707026;
+      .section-2-span {
+        border: 18px solid #f8d146;
+      }
+    }
+    .section-3 {
+      background: #eff3ff 0% 0% no-repeat padding-box;
+      border: 1px solid #70707026;
+      .section-3-span {
+        border: 18px solid #b1c4f9;
+      }
+    }
+    .section-4 {
+      background: #eff3ff 0% 0% no-repeat padding-box;
+      border: 1px solid #70707026;
+      .section-4-span {
+        border: 18px solid #b1c4f9;
+      }
+    }
+
+    .section {
+      width: 599px;
+      height: 141px;
+      border-radius: 15px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+      .section-span {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        opacity: 1;
+        margin-left: 18px;
+        .section-img {
+          width: 45px;
+          opacity: 1;
+          margin: 17px;
+        }
+      }
+      .section-div {
+        display: flex;
+        flex-direction: column;
+        width: 424px;
+        padding-bottom: 11px;
+        border-bottom: 2px solid #ced2dc;
+        height: 80px;
+        justify-content: space-between;
+        margin-left: 18px;
+        .section-label {
+          height: 25px;
+          text-align: left;
+          font: normal normal normal 18px/27px Poppins;
+          letter-spacing: 0px;
+          color: #424242;
+          opacity: 0.56;
+        }
+        .section-value {
+          height: 39px;
+          text-align: left;
+          font: normal normal normal 28px/42px Poppins;
+          letter-spacing: 0px;
+          color: #424242;
+          opacity: 1;
+        }
+      }
+    }
+    .seperator {
+      width: 633px;
+      border: 0.2px solid grey;
+      margin: 20px;
+    }
+
+    .start-game-button {
+      width: 633px;
+      height: 100px;
+      background: #4b7bff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #70707026;
+      border-radius: 20px;
+      opacity: 1;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 17px;
+      .button-text {
+        width: 184px;
+        height: 45px;
+        text-align: center;
+        font: normal normal 36px/40px Poppins;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
+    }
+  }
+
+  .blur-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1080px;
+    opacity: 0.65;
+    background: #000000 0% 0% no-repeat padding-box;
+  }
+}

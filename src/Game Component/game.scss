@@ -1,0 +1,292 @@
+.game-board-container {
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    display: flex;
+    z-index: 1;
+    .header-arrow {
+      position: fixed;
+      top: 17px;
+      left: 34px;
+      width: 30px;
+      height: 27px;
+      opacity: 1;
+      cursor: pointer;
+      font-size: 32px;
+    }
+    .header-text {
+      position: fixed;
+      top: 20px;
+      left: 830px;
+      width: 261px;
+      height: 39px;
+      text-align: left;
+      font: normal normal 600 28px/42px Poppins;
+      letter-spacing: 0px;
+      color: #424242;
+      opacity: 1;
+    }
+  }
+
+  .game-field {
+    position: fixed;
+    top: 120px;
+    left: 315px;
+    width: 840px;
+    height: 840px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    border-radius: 30px;
+  }
+
+  .game-field-background {
+    position: fixed;
+    top: 141px;
+    left: 335px;
+    width: 800px;
+    height: 798px;
+    background: #84a4fc 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000040;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    border-radius: 54px;
+    outline: none;
+  }
+
+  .game-detail {
+    position: fixed;
+    top: 120px;
+    left: 765px;
+    width: 840px;
+    height: 840px;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border: 1px solid #f7f7f7;
+    opacity: 1;
+    border-radius: 30px;
+    .detail-container {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      height: 840px;
+      align-items: center;
+    }
+
+    .scoreboard-container {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      .player-scoreboard {
+        display: flex;
+        width: 385px;
+        height: 120px;
+        background: #dcf6e4 0% 0% no-repeat padding-box;
+        border: 1px solid #70707026;
+        opacity: 1;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        align-items: center;
+        .add-border {
+          border: 16px solid #ffa200;
+        }
+        .image-wrapper {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          opacity: 1;
+          .image {
+            width: 55px;
+            display: flex;
+            opacity: 1;
+            z-index: 0;
+            margin: 12px;
+          }
+        }
+        .player1-wrapper {
+          border: 16px solid #37ac5d;
+        }
+        .player2-wrapper {
+          border: 16px solid #f8d146;
+        }
+        .detail,
+        .score-detail {
+          .label {
+            width: 76px;
+            height: 25px;
+            text-align: left;
+            font: normal normal normal 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #424242;
+            opacity: 0.56;
+            margin-bottom: 15px;
+          }
+          .sub-label {
+            width: 80px;
+            height: 39px;
+            text-align: left;
+            font: normal normal normal 28px/42px Poppins;
+            letter-spacing: 0px;
+            color: #424242;
+            opacity: 1;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .seperator {
+      width: 403px;
+      border: 0.2px solid grey;
+      margin: 0px 16px;
+      float: right;
+    }
+    .button-container {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      .undo-button {
+        width: 385px;
+        height: 100px;
+        background: #4b7bff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #70707026;
+        border-radius: 20px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font: normal normal 32px/48px Poppins;
+        letter-spacing: 0px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 20px 30px 0px;
+      }
+      .next-button {
+        width: 385px;
+        height: 100px;
+        background: #4b7bff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #70707026;
+        border-radius: 20px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font: normal normal 32px/48px Poppins;
+        letter-spacing: 0px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 20px 30px 0px;
+      }
+      .end-button {
+        width: 385px;
+        height: 100px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #4b7bff26;
+        border-radius: 20px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font: normal normal 32px/48px Poppins;
+        letter-spacing: 0px;
+        color: #cc0000;
+        cursor: pointer;
+        margin: 20px 30px 0px;
+      }
+    }
+  }
+  .game--container {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    position: fixed;
+    top: 158px;
+    left: 354px;
+    width: 785px;
+    height: 788px;
+    opacity: 1;
+  }
+  .cell {
+    font-family: "Permanent Marker", cursive;
+    width: 80px;
+    height: 80px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 0px 1px #ffffff;
+    border: 1px solid #ffffff;
+    line-height: 100;
+    font-size: 60px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+
+    .winning-player-cell {
+      width: 80px;
+      height: 80px;
+      margin-left: -7px;
+      border: 10px solid #ffa200;
+      margin-top: -4px;
+      border-radius: 50%;
+    }
+    .player-img {
+      height: 86px;
+      margin-left: 4px;
+      position: fixed;
+    }
+  }
+
+  .details-heading {
+    width: 396px;
+    height: 51px;
+    font: normal normal 600 36px/55px Poppins;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #424242;
+    margin: 28px;
+    margin-bottom: 15px;
+  }
+  .details-sub-heading {
+    width: 186px;
+    height: 33px;
+    font: normal normal 580 24px/35px Poppins;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #505351;
+  }
+
+  .winning-message {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: center;
+    justify-content: space-around;
+    .congratulation-text {
+      width: 336px;
+      height: 59px;
+      font: normal normal 400 42px/63px Poppins;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #ff6600;
+      opacity: 1;
+    }
+    .player-text {
+      width: 282px;
+      font: normal normal 400 24px/40px Poppins;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #505351;
+      opacity: 1;
+    }
+  }
+}
